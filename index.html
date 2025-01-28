@@ -19,12 +19,16 @@
             color: white;
             padding: 1.5rem 0;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
         }
 
         header h1 {
             margin: 0;
             font-weight: 600;
             color: white;
+            width: 100%;
         }
 
         .container {
@@ -62,6 +66,27 @@
         margin-top: 1rem;
         }
 
+        header #connections {
+            display: flex;
+            flex-direction: column;
+            gap: 10 px;
+            padding-left: 50px;
+            align-items: center;
+            width: 20%;
+        }
+
+        header #connections_header {
+            margin: 0;
+            font-weight: 600;
+            color: white;
+        }
+
+        header #connections_links {
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+        }
+
         header nav a {
             color: white;
             text-decoration: none;
@@ -72,6 +97,7 @@
             border: 2px solid white;
             border-radius: 5px;
             transition: background 0.3s, color 0.3s;
+            align-self: flex-end;
         }
 
 
@@ -88,27 +114,41 @@
 </head>
 <body>
     <header>
+        <div id="title container">
         <h1>Welcome to My Personal Page</h1>
         <nav>
             <a href="#about">About Me</a>
             <a href="projects.html">My Projects</a>
         </nav>
+    </div>
+        <div id="connections">
+            <div id="connections_header">
+                Connect with me:
+            </div>
+            <div id="connections_links">
+                <a href="https://github.com/pablo-deike">
+                    <img src="github-mark.svg" alt="Github logo" style="width: 30px; height: 30px;">
+                    </a>
+                <a href="https://www.linkedin.com/in/pablo-deike-592921232/">
+                    <img src="linkedin-mark.svg" alt="Linkedin logo" style="width: 30px; height: 30px;">
+                    </a>
+        </div>
+        </div>
     </header>
 
     <div class="container">
         <section id="about">
             <h2>About Me</h2>
             <p>Hi! My name is Pablo Deike. I am a CSE student (Computational Science and Engineering) at TUM. 
-            I am a passionate self-taught software engineer who has worked at one of the biggest startups in Europe, Fever.
+            I am a passionate self-taught software engineer.
             In my free time, I enjoy doing sports and reading. I usually go to the gym and do other sports such as bouldering and football.</p>
         </section>
 
         <section id="background">
             <h2>My Background</h2>
-            <p>Since I was a child, my innate curiosity and passion for learning led me to ponder the mysteries of nature, from the color of the sky to the mechanics of a car. 
-                This early fascination evolved into a profound interest in science, which has driven me to study for my Bachelor’s Degree in Physics.
-                 In my first year of the degree, I stumbled across an unexpected passion: simulations and programming.
-                This passion for programming has led me to being an active self-learner of software engineering principles, as well as new emerging technologies such as AI and machine learning.</p>
+            <p> I hold a Bachelor's degree in Physics, but during my first year, I discovered an unexpected passion: simulations and programming.
+                This passion sparked a journey of active self-learning in software engineering and emerging technologies like AI and machine learning.
+            </p>
         </section>
 
     </div>
