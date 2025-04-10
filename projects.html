@@ -1,16 +1,17 @@
 <link rel="stylesheet" type="text/css" href="https://pablo-deike.github.io/styles.css">
 <script>
     MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      },
-      svg: {
-    fontCache: 'global'
-  }
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
     };
-    </script>
+</script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,9 +74,9 @@
             margin: 10px 0;
             color: #555;
         }
-        
+
         header nav {
-        margin-top: 1rem;
+            margin-top: 1rem;
         }
 
         header nav a {
@@ -89,6 +90,7 @@
             border-radius: 5px;
             transition: background 0.3s, color 0.3s;
         }
+
         header #connections {
             display: flex;
             flex-direction: column;
@@ -110,6 +112,10 @@
             column-gap: 10px;
         }
 
+        body a {
+            font-size: 20px;
+        }
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -123,15 +129,16 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <div id="title container">
-        <h1>My projects</h1>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="projects.html">My Projects</a>
-        </nav>
-    </div>
+            <h1>My projects</h1>
+            <nav>
+                <a href="index.html">About Me</a>
+                <a href="projects.html">My Projects</a>
+            </nav>
+        </div>
         <div id="connections">
             <div id="connections_header">
                 Connect with me:
@@ -139,56 +146,75 @@
             <div id="connections_links">
                 <a href="https://github.com/pablo-deike">
                     <img src="github-mark.svg" alt="Github logo" style="width: 30px; height: 30px;">
-                    </a>
+                </a>
                 <a href="https://www.linkedin.com/in/pablo-deike-592921232/">
                     <img src="linkedin-mark.svg" alt="Linkedin logo" style="width: 30px; height: 30px;">
-                    </a>
-        </div>
+                </a>
+            </div>
         </div>
     </header>
 
     <div class="container">
         <section>
             <h2>Personal projects</h2>
-            <h3>My own redis</h3>
+            <a href="https://github.com/pablo-deike/flask_app">Flask login app</a>
             <p>
-                I have developed a redis server. This project served as a good practice on how to handle socket connections and create a server in C++.
+                This repository aims to create a flask login service that could be scalated to other big projects.
+                This project has migrations, a database with sqlite3, and uses authentication through flask login and
+                flask bcrypt.
+            </p>
+            <a href="https://github.com/pablo-deike/my_redis">Redis replica</a>
+            <p>
+                I have developed a redis server. This project served as a good practice on how to handle socket
+                connections and create a server in C++.
                 It is also a good exercise for implementing hash tables on C++.
             </p>
             <h3>Deepseek VSCode extension</h3>
             <p>
                 Deepseek has shocked the AI world when they released their Deepseek-r1 model.
-                This is one of the cheapest and most efficient models on the market, and has the advantage of being open source, so everyone can run it as long as they have the required hardware.
-                In my case, I've created an easy vscode extension, for personal use mainly, that connects locally to the Deepseek-r1 small model (available in llama)
+                This is one of the cheapest and most efficient models on the market, and has the advantage of being open
+                source, so everyone can run it as long as they have the required hardware.
+                In my case, I've created an easy vscode extension, for personal use mainly, that connects locally to the
+                Deepseek-r1 small model (available in llama)
                 and one can access this AI assistant from VSCode without any internet connection (ideal for long trips)
             </p>
         </section>
         <section>
             <h2>Academic projects</h2>
-            <h3>Neural Networks on Nuclear Physics</h3>
+            <a href="https://github.com/pablo-deike/TFG">Neural Networks on Nuclear Physics</a>
             <p>
-                This is based on my Bachelor’s thesis. In this project, I created neural networks using Pytorch to solve the problem of finding the binding energy of nuclei.
-                For those without a background in physics, this knowledge has applications in energy, material science, and chemistry.
+                This is based on my Bachelor’s thesis. In this project, I created neural networks using Pytorch to solve
+                the problem of finding the binding energy of nuclei.
+                For those without a background in physics, this knowledge has applications in energy, material science,
+                and chemistry.
             </p>
-            <h3>Barnes Hut simulation</h3>
+            <a href="https://github.com/MiguelVeganzones/ParticleSimulation"> Barnes Hut simulation </a>
             <p>
-                Academical group where we developed an imnplementation of the barnes hut algorithm in C++. This algorithm is applied to a many body system, 
-                in this case of particles being attracted by the gravitational force. This algorithm reduces the number of calculations from $O(N^2)$ to $O(NlogN)$, 
-                where N is the number of particles affected by gravity, by making smart approximations using the center of mass and some optimizable parameter theta.
+                Academical group where we developed an imnplementation of the barnes hut algorithm in C++. This
+                algorithm is applied to a many body system,
+                in this case of particles being attracted by the gravitational force. This algorithm reduces the number
+                of calculations from $O(N^2)$ to $O(NlogN)$,
+                where N is the number of particles affected by gravity, by making smart approximations using the center
+                of mass and some optimizable parameter theta.
             </p>
         </section>
-            <section>
+        <section>
             <h2>Fun projects</h2>
-            <h3>Prisonner's dilemma</h3>
+            <a href="https://github.com/pablo-deike/prisonners_dilemma">Prisonner's dilemma</a>
             <p>
-                As a board game enthusiast, one of my favourite math theories is game theory. Therefore, I created a simple repository about the prisonner's dilemma, one of the classic problems in game theory.
-                Two prisoners must independently decide whether to cooperate or betray the other, without knowing what the other will choose. Their choices determine their fate, creating a scenario where rational self-interest can lead to worse outcomes for both.
-                In this repository I have created some simple strategies to play the game and see what has the best outcome on average (who has the most points)
+                As a board game enthusiast, one of my favourite math theories is game theory. Therefore, I created a
+                simple repository about the prisonner's dilemma, one of the classic problems in game theory.
+                Two prisoners must independently decide whether to cooperate or betray the other, without knowing what
+                the other will choose. Their choices determine their fate, creating a scenario where rational
+                self-interest can lead to worse outcomes for both.
+                In this repository I have created some simple strategies to play the game and see what has the best
+                outcome on average (who has the most points)
             </p>
-            
+
             <h3>Poker game (ongoing, not published)</h3>
             <p>
-                Keeping up with the trend of board games I've created a basic poker game project. This repository will hand the cards and allow you to play texas hold'em poker. It'll 
+                Keeping up with the trend of board games I've created a basic poker game project. This repository will
+                hand the cards and allow you to play texas hold'em poker. It'll
                 also have an evaluator of hands and a betting system. This project is still being developed.
             </p>
 
@@ -196,4 +222,5 @@
 
     </div>
 </body>
+
 </html>
