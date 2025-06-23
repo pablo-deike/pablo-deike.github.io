@@ -1,158 +1,213 @@
-<link rel="stylesheet" type="text/css" href="https://pablo-deike.github.io/styles.css">
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://pablo-deike.github.io/styles.css"
+/>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #f4f4f9, #e6e9f0);
-        }
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.8;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #f4f4f9, #e6e9f0);
+      }
 
-        header {
-            background: royalblue;
-            color: white;
-            padding: 1.5rem 0;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 20px;
+      header {
+        background: royalblue;
+        color: white;
+        padding: 1.5rem 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-weight: 600;
+        color: white;
+        width: 100%;
+      }
+
+      .container {
+        width: 85%;
+        margin: auto;
+        padding: 20px;
+      }
+
+      section {
+        background: white;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      section h2 {
+        color: royalblue;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      section h3 {
+        color: #333;
+        font-weight: 500;
+        margin: 15px 0 10px;
+      }
+
+      section p {
+        margin: 10px 0;
+        color: #555;
+      }
+
+      header nav {
+        margin-top: 1rem;
+      }
+
+      header #connections {
+        display: flex;
+        flex-direction: column;
+        gap: 10 px;
+        padding: 10px;
+        align-items: center;
+        width: 20%;
+      }
+
+      header #connections_header {
+        margin: 0;
+        font-weight: 600;
+        color: white;
+      }
+
+      header #connections_links {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+      }
+
+      header nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+        align-self: flex-end;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          width: 95%;
         }
 
         header h1 {
-            margin: 0;
-            font-weight: 600;
-            color: white;
-            width: 100%;
+          font-size: 1.5rem;
         }
-
-        .container {
-            width: 85%;
-            margin: auto;
-            padding: 20px;
-        }
-
-        section {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        section h2 {
-            color: royalblue;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        section h3 {
-            color: #333;
-            font-weight: 500;
-            margin: 15px 0 10px;
-        }
-
-        section p {
-            margin: 10px 0;
-            color: #555;
-        }
-        
-        header nav {
-        margin-top: 1rem;
-        }
-
-        header #connections {
-            display: flex;
-            flex-direction: column;
-            gap: 10 px;
-            padding: 10px;
-            align-items: center;
-            width: 20%;
-        }
-
-        header #connections_header {
-            margin: 0;
-            font-weight: 600;
-            color: white;
-        }
-
-        header #connections_links {
-            display: flex;
-            flex-direction: row;
-            column-gap: 10px;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2rem;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border: 2px solid white;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-            align-self: flex-end;
-        }
-
-
-        @media (max-width: 768px) {
-            .container {
-                width: 95%;
-            }
-
-            header h1 {
-                font-size: 1.5rem;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="title container">
+      <div id="title container">
         <h1>Welcome to My Personal Page</h1>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="projects.html">My Projects</a>
+          <a href="#about">About Me</a>
+          <a href="projects.html">My Projects</a>
         </nav>
-    </div>
-        <div id="connections">
-            <div id="connections_header">
-                Connect with me:
-            </div>
-            <div id="connections_links">
-                <a href="https://github.com/pablo-deike">
-                    <img src="github-mark.svg" alt="Github logo" style="width: 30px; height: 30px;">
-                    </a>
-                <a href="https://www.linkedin.com/in/pablo-deike-592921232/">
-                    <img src="linkedin-mark.svg" alt="Linkedin logo" style="width: 30px; height: 30px;">
-                    </a>
+      </div>
+      <div id="connections">
+        <div id="connections_header">Connect with me:</div>
+        <div id="connections_links">
+          <a href="https://github.com/pablo-deike">
+            <img
+              src="github-mark.svg"
+              alt="Github logo"
+              style="width: 30px; height: 30px"
+            />
+          </a>
+          <a href="https://www.linkedin.com/in/pablo-deike-592921232/">
+            <img
+              src="linkedin-mark.svg"
+              alt="Linkedin logo"
+              style="width: 30px; height: 30px"
+            />
+          </a>
         </div>
-        </div>
+      </div>
     </header>
 
     <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hi! My name is Pablo Deike. I am a CSE student (Computational Science and Engineering) at TUM. 
-            I am a passionate self-taught software engineer.
-            In my free time, I enjoy doing sports, reading and playing board games. I usually go to the gym and do other sports such as bouldering and football.</p>
-        </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi! My name is Pablo Deike. I am a CSE student (Computational Science
+          and Engineering) at TUM. I am a passionate self-taught software
+          engineer. In my free time, I enjoy doing sports, reading and playing
+          board games. I usually go to the gym and do other sports such as
+          bouldering and football.
+        </p>
+      </section>
 
-        <section id="background">
-            <h2>My Background</h2>
-            <p> I hold a Bachelor's degree in Physics, but during my first year, I discovered an unexpected passion: simulations and programming.
-                This passion has made me pursue M.Sc. Computational Science and Engineering ajd begin a journey of active self-learning in software engineering and emerging technologies like AI and machine learning.
-            </p>
-        </section>
+      <section id="background">
+        <h2>My Background</h2>
+        <p>
+          I hold a Bachelor's degree in Physics, but during my first year, I
+          discovered an unexpected passion: simulations and programming. This
+          passion has made me pursue M.Sc. Computational Science and Engineering
+          ajd begin a journey of active self-learning in software engineering
+          and emerging technologies like AI and machine learning.
+        </p>
+      </section>
 
+      <section id="experience">
+        <h2>Work experience</h2>
+        <h3 style="color: royalblue">
+          Full time Software Engineer Intern at Fever
+        </h3>
+        <p>
+          <strong>
+            Technologies used: Python, Angular, Django, Flask, PostgreSQL,
+            Docker, Git, Jenkins, ArgoCD.
+          </strong>
+        </p>
+        <p>
+          Scope of work: Developed and maintained backend services and APIs for
+          a ticketing platform. Rotate through different teams to gain
+          experience in various aspects of software development, including
+          frontend development, mobile application development, backend
+          development, and data engineering.
+        </p>
+        <p>
+          Highlighted project: Developed a payment provider integration for a
+          ticketing platform, enabling users to purchase tickets through a new
+          payment provider, developing both frontend and backend components.
+        </p>
+        <h3 style="color: royalblue">
+          Working student software engineer at TMH
+        </h3>
+        <p>
+          <strong>Technologies used: Python, Typescript, Amazon CDK.</strong>
+        </p>
+        <p>
+          Scope of work: Developed lambda functions and backend services for a
+          data processing platform. Worked on automating infrastructure
+          deployment using Amazon CDK.
+        </p>
+      </section>
     </div>
-</body>
+  </body>
 </html>
