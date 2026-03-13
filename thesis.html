@@ -1,0 +1,188 @@
+<link rel="stylesheet" type="text/css" href="https://pablo-deike.github.io/styles.css">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Thesis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f9, #e6e9f0);
+        }
+
+        header {
+            background: royalblue;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 600;
+            color: white;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: royalblue;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        section h3 {
+            color: royalblue;
+            font-weight: 500;
+            margin: 15px 0 10px;
+        }
+
+        section p {
+            margin: 10px 0;
+            color: #555;
+        }
+
+        header nav {
+            margin-top: 1rem;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border: 2px solid white;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header #connections {
+            display: flex;
+            flex-direction: column;
+            gap: 10 px;
+            padding: 10px;
+            align-items: center;
+            width: 20%;
+        }
+
+        header #connections_header {
+            margin: 0;
+            font-weight: 600;
+            color: white;
+        }
+
+        header #connections_links {
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+        }
+
+        .ongoing-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            color: #856404;
+            font-size: 0.95rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="title container">
+            <h1>Final Thesis</h1>
+            <nav>
+                <a href="index.html">About Me</a>
+                <a href="projects.html">My Projects</a>
+                <a href="thesis.html">Final Thesis</a>
+            </nav>
+        </div>
+        <div id="connections">
+            <div id="connections_header">
+                Connect with me:
+            </div>
+            <div id="connections_links">
+                <a href="https://github.com/pablo-deike">
+                    <img src="github-mark.svg" alt="Github logo" style="width: 30px; height: 30px;">
+                </a>
+                <a href="https://www.linkedin.com/in/pablo-deike-592921232/">
+                    <img src="linkedin-mark.svg" alt="Linkedin logo" style="width: 30px; height: 30px;">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Master's Thesis</h2>
+            <div class="ongoing-note">
+                This thesis is currently ongoing. Predicted finishing date: October 15th, 2026.
+            </div>
+            <h3>Closed-Form Distances and Divergences for Gaussian Mixtures in Probabilistic Machine Learning and Uncertainty Quantification</h3>
+            <p>
+                Gaussian mixtures (GM) are basis functions for positive unit measures that,
+                given enough regularity and a proper dissimilarity measure, are well suited
+                for Probabilistic Machine Learning (PML) and Uncertainty Quantification (UQ).
+            </p>
+            <p>
+                The choice of distance or divergence used in both aspects affects computation
+                and theoretical guarantees. In the PML aspect, during the Expectation
+                Maximization (EM) algorithm used for fitting a GM to data, the stopping
+                criterion usually checks convergence in the parameters rather than convergence
+                in a distance or divergence. This is because the Kullback-Leibler (KL)
+                divergence, a special case of the alpha-divergence and the f-divergence, does
+                not admit a closed form. The Evidence Lower Bound (ELBO) used during fitting
+                is also based on the KL-divergence.
+            </p>
+            <p>
+                From the UQ aspect, the Bayesian update when a GM family is used on the prior
+                and likelihood results in an increase in the number of components. A low-rank
+                estimation to reduce the number of parameters based on a distance or divergence
+                is therefore necessary.
+            </p>
+            <p>
+                The aim of the thesis is to use distances and divergences that admit a closed
+                form for Gaussian mixtures to investigate and improve processes within both
+                the PML and UQ aspects.
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>
